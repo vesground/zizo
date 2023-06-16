@@ -1,0 +1,23 @@
+input[type=submit] {
+  display: block;
+  margin-left: auto;
+}
+
+textarea {
+  width: 100%;
+}
+
+textarea[name=text] {
+  resize: vertical;
+  max-height: 50vh;
+  min-height: 99px;
+}
+
+textarea[name=statistic] {
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 0.25rem;
+}
