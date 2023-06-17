@@ -29,7 +29,7 @@ function normilize(dictionary: IWordsStatistic): string {
 }
   
 export async function calculateWordsTypes(data: ICalculateWordsTypesData): Promise<string> {
-	const response = await fetch('https://3h9cermjv9.execute-api.us-east-1.amazonaws.com/words-statistic', { method: 'POST', body: JSON.stringify(data) })
+	const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/words-statistic`, { method: 'POST', body: JSON.stringify(data) })
 	const body = await response.json()
 	return normilize(body)
 }
